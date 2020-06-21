@@ -1,0 +1,363 @@
+EESchema Schematic File Version 4
+LIBS:pcb-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_Motor:A4988 A2
+U 1 1 5CC68529
+P 6150 4150
+F 0 "A2" H 6200 4915 50  0000 C CNN
+F 1 "A4988" H 6200 4824 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5675 3700 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 6150 3850 50  0001 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5CC6C9B4
+P 4800 4950
+F 0 "J2" H 4880 4942 50  0000 L CNN
+F 1 "YawMotor" H 4880 4851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x04_P2.00mm_Vertical" H 4800 4950 50  0001 C CNN
+F 3 "~" H 4800 4950 50  0001 C CNN
+	1    4800 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5CC6DB28
+P 4100 4950
+F 0 "J1" H 4180 4942 50  0000 L CNN
+F 1 "PitchMotor" H 4180 4851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x04_P2.00mm_Vertical" H 4100 4950 50  0001 C CNN
+F 3 "~" H 4100 4950 50  0001 C CNN
+	1    4100 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 4050 6650 4150
+Connection ~ 6650 4150
+Wire Wire Line
+	6650 4150 6650 4250
+Wire Wire Line
+	6750 3150 6750 4150
+Wire Wire Line
+	6750 4150 6650 4150
+Wire Wire Line
+	4400 3750 4500 3750
+Wire Wire Line
+	4500 3250 4500 3650
+Wire Wire Line
+	4500 3250 5750 3250
+Wire Wire Line
+	5750 3250 5750 3650
+Wire Wire Line
+	3950 4350 4500 4350
+Wire Wire Line
+	3650 4600 4300 4600
+Wire Wire Line
+	5650 4600 5650 4250
+Wire Wire Line
+	5650 4250 5750 4250
+Wire Wire Line
+	4500 4250 4300 4250
+Wire Wire Line
+	4300 4250 4300 4600
+Connection ~ 4300 4600
+Wire Wire Line
+	4300 4600 5650 4600
+Wire Wire Line
+	3950 4350 3950 4550
+Wire Wire Line
+	5750 4550 5750 4350
+Connection ~ 3950 4350
+Wire Wire Line
+	4200 4750 4200 4150
+Wire Wire Line
+	4200 4150 4500 4150
+Wire Wire Line
+	4100 4750 4100 4050
+Wire Wire Line
+	4000 4750 4000 3950
+Wire Wire Line
+	4000 3950 4500 3950
+Wire Wire Line
+	4900 4750 5700 4750
+Wire Wire Line
+	5700 4750 5700 4150
+Wire Wire Line
+	5700 4150 5750 4150
+Wire Wire Line
+	4800 4750 4800 4700
+Wire Wire Line
+	4800 4700 5600 4700
+Wire Wire Line
+	4700 4750 4700 4650
+Wire Wire Line
+	4600 4750 4600 4500
+Wire Wire Line
+	4600 4500 5500 4500
+Wire Wire Line
+	5500 4500 5500 3850
+Wire Wire Line
+	5750 3750 5650 3750
+Wire Wire Line
+	5650 3750 5650 3150
+Connection ~ 5650 3150
+Wire Wire Line
+	5650 3150 6750 3150
+Wire Wire Line
+	3950 3600 3950 3750
+Wire Wire Line
+	3650 3700 3650 3750
+$Comp
+L Device:CP C1
+U 1 1 5CC712A3
+P 3800 3750
+F 0 "C1" V 3550 3750 50  0000 C CNN
+F 1 "100uF" V 3636 3750 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3838 3600 50  0001 C CNN
+F 3 "~" H 3800 3750 50  0001 C CNN
+	1    3800 3750
+	0    1    1    0   
+$EndComp
+Connection ~ 3950 3750
+Wire Wire Line
+	3950 3750 3950 4350
+Connection ~ 3650 3750
+Wire Wire Line
+	3650 3750 3650 4600
+Wire Wire Line
+	5500 3850 5750 3850
+Wire Wire Line
+	4500 3850 3900 3850
+Wire Wire Line
+	3900 3850 3900 4750
+Wire Wire Line
+	4500 4050 4100 4050
+Wire Wire Line
+	5550 3950 5750 3950
+Wire Wire Line
+	5550 3950 5550 4650
+Wire Wire Line
+	5750 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 4700
+Wire Wire Line
+	4400 3150 5450 3150
+Wire Wire Line
+	5400 3850 5400 3950
+Wire Wire Line
+	6650 3850 6650 3950
+Wire Wire Line
+	5400 4050 5400 4150
+Wire Wire Line
+	5400 4250 5400 4150
+Connection ~ 5400 4150
+Wire Wire Line
+	5400 4150 5450 4150
+Wire Wire Line
+	5450 4150 5450 3150
+Connection ~ 5450 3150
+Wire Wire Line
+	5450 3150 5650 3150
+NoConn ~ 5400 4350
+NoConn ~ 6650 4350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5CCC3F32
+P 2850 2650
+F 0 "#FLG0101" H 2850 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 2823 50  0000 C CNN
+F 2 "" H 2850 2650 50  0001 C CNN
+F 3 "~" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 5CCC4D83
+P 3250 2650
+F 0 "#PWR0105" H 3250 2450 50  0001 C CNN
+F 1 "GNDPWR" H 3255 2495 50  0000 C CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "" H 3250 2600 50  0001 C CNN
+	1    3250 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5CCC5986
+P 3250 2650
+F 0 "#PWR0106" H 3250 2400 50  0001 C CNN
+F 1 "GND" H 3255 2477 50  0000 C CNN
+F 2 "" H 3250 2650 50  0001 C CNN
+F 3 "" H 3250 2650 50  0001 C CNN
+	1    3250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5CCC61EC
+P 3700 2650
+F 0 "#PWR0107" H 3700 2500 50  0001 C CNN
+F 1 "+5V" H 3715 2823 50  0000 C CNN
+F 2 "" H 3700 2650 50  0001 C CNN
+F 3 "" H 3700 2650 50  0001 C CNN
+	1    3700 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0108
+U 1 1 5CCCA502
+P 2850 2650
+F 0 "#PWR0108" H 2850 2500 50  0001 C CNN
+F 1 "+12V" H 2865 2823 50  0000 C CNN
+F 2 "" H 2850 2650 50  0001 C CNN
+F 3 "" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 3700 3650 3700
+Wire Wire Line
+	3100 3600 3950 3600
+Connection ~ 3100 3700
+Connection ~ 3100 3600
+$Comp
+L power:+12V #PWR0101
+U 1 1 5CC6FD74
+P 3100 3600
+F 0 "#PWR0101" H 3100 3450 50  0001 C CNN
+F 1 "+12V" V 3115 3728 50  0000 L CNN
+F 2 "" H 3100 3600 50  0001 C CNN
+F 3 "" H 3100 3600 50  0001 C CNN
+F 4 "V" H 3100 3600 50  0001 C CNN "Spice_Primitive"
+F 5 "Y" H 3100 3600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3100 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CC72043
+P 3100 3700
+F 0 "#PWR0102" H 3100 3450 50  0001 C CNN
+F 1 "GND" V 3105 3572 50  0000 R CNN
+F 2 "" H 3100 3700 50  0001 C CNN
+F 3 "" H 3100 3700 50  0001 C CNN
+	1    3100 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male P2
+U 1 1 5CCFF63C
+P 2900 3600
+F 0 "P2" H 3008 3781 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3008 3690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2900 3600 50  0001 C CNN
+F 3 "~" H 2900 3600 50  0001 C CNN
+	1    2900 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 3250
+Wire Wire Line
+	5650 4600 6900 4600
+Wire Wire Line
+	6900 4600 6900 3250
+Connection ~ 5650 4600
+Wire Wire Line
+	5750 3250 6900 3250
+Wire Wire Line
+	4700 4650 5550 4650
+Wire Wire Line
+	3950 4550 5750 4550
+$Comp
+L Driver_Motor:A4988 A1
+U 1 1 5CC6737F
+P 4900 4150
+F 0 "A1" H 4950 4915 50  0000 C CNN
+F 1 "A4988" H 4950 4824 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 4425 3700 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 4900 3850 50  0001 C CNN
+	1    4900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3150 4250 3150
+Connection ~ 4400 3150
+Wire Wire Line
+	4400 3150 4400 3750
+Wire Wire Line
+	3900 3250 3950 3250
+Connection ~ 4500 3250
+NoConn ~ 6650 3650
+NoConn ~ 6650 3750
+NoConn ~ 5400 3650
+NoConn ~ 5400 3750
+$Comp
+L power:GND #PWR0103
+U 1 1 5CCF4D74
+P 3950 3250
+F 0 "#PWR0103" H 3950 3000 50  0001 C CNN
+F 1 "GND" H 3955 3077 50  0000 C CNN
+F 2 "" H 3950 3250 50  0001 C CNN
+F 3 "" H 3950 3250 50  0001 C CNN
+	1    3950 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 3250
+Wire Wire Line
+	3950 3250 4500 3250
+$Comp
+L power:+5V #PWR0104
+U 1 1 5CCFA836
+P 4250 3150
+F 0 "#PWR0104" H 4250 3000 50  0001 C CNN
+F 1 "+5V" H 4265 3323 50  0000 C CNN
+F 2 "" H 4250 3150 50  0001 C CNN
+F 3 "" H 4250 3150 50  0001 C CNN
+	1    4250 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 3150
+Wire Wire Line
+	4250 3150 4400 3150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5CD1578B
+P 3700 2650
+F 0 "#FLG0102" H 3700 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 2823 50  0000 C CNN
+F 2 "" H 3700 2650 50  0001 C CNN
+F 3 "~" H 3700 2650 50  0001 C CNN
+	1    3700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male P1
+U 1 1 5CCE63E7
+P 3700 3150
+F 0 "P1" H 3808 3331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3808 3240 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 3700 3150 50  0001 C CNN
+F 3 "~" H 3700 3150 50  0001 C CNN
+F 4 "V" H 3700 3150 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 3700 3150 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3700 3150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3700 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
